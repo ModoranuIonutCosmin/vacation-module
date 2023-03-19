@@ -1,0 +1,12 @@
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\bin\Debug\net7.0\VacationsModule.Domain.deps.json
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\bin\Debug\net7.0\VacationsModule.Domain.dll
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\bin\Debug\net7.0\VacationsModule.Domain.pdb
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.csproj.AssemblyReference.cache
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.AssemblyInfoInputs.cache
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.AssemblyInfo.cs
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.csproj.CoreCompileInputs.cache
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.dll
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\refint\VacationsModule.Domain.dll
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\VacationsModule.Domain.pdb
+C:\Users\KENR\Desktop\tremend_hw\vacation-module\VacationsModule.Domain\obj\Debug\net7.0\ref\VacationsModule.Domain.dll
