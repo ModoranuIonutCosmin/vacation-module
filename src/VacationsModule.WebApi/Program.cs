@@ -41,16 +41,11 @@ AddHealthChecks(builder);
 
 //Add mediatr
 AddMediatR(builder);
+
+
 AddAutoMapper(builder);
 
 
-// Add these services to dependecy injection  IVacationDateIntervalsValidator;
-// IEmployeeEligibleVacationDaysCountValidator;
-// IVacationDaysCalculatorService;
-// IUnitOfWork;
-// IEmployeesRepository;
-// IVacationRequestsRepository;
-// IVacationRequestValidator
 
 builder.Services
     .AddTransient<IEmployeeEligibleVacationDaysCountValidator, EmployeeEligibleVacationDaysCountValidator>()
@@ -78,6 +73,12 @@ builder.Services
 var app = builder.Build();
 
 
+// de sters in prod, load balancere, scale set etc
+using (var scope = app.Services.CreateScope())
+{
+    scope.ServiceProvider.GetService<VacationRequestsDBContext>().Database.EnsureCreated();
+}
+//
 
 
 // Configure the HTTP request pipeline.

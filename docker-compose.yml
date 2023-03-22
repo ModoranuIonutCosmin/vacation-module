@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  vacationsmodule.webapi:
+    image: ${DOCKER_REGISTRY-}vacationsmodulewebapi
+    build:
+      context: .
+      dockerfile: src/VacationsModule.WebApi/Dockerfile
+    depends_on:
+       - vacationsmodule.sqldb
+
+  vacationsmodule.sqldb:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    
