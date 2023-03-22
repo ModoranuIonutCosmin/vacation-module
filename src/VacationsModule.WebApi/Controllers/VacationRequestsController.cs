@@ -17,9 +17,6 @@ namespace VacationsModule.WebApi.Controllers;
 public class VacationRequestsController : BaseController<VacationRequestsController>
 {
     
-    public VacationRequestsController() : base(null)
-    {
-    }
     public VacationRequestsController(ILogger<VacationRequestsController> logger,
         UsersSeed usersSeed) : base(logger)
     {

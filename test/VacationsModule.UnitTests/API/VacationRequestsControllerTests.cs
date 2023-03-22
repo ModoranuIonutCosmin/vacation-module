@@ -3,10 +3,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
 using VacationsModule.Application.DTOs;
-using VacationsModule.Application.Features;
 using VacationsModule.Application.Interfaces.Services;
 using VacationsModule.Domain.Entities;
-using VacationsModule.Domain.Exceptions;
 using VacationsModule.UnitTests.Auth_mock;
 using VacationsModule.WebApi.Controllers;
 
@@ -30,6 +28,7 @@ public class VacationRequestsControllerTests
                 It.IsAny<GetVacationRequestsPaginatedRequest>()))
             .ReturnsAsync(new GetVacationRequestsPaginatedResponse());
 
+
         VacationRequestsController vacationRequestsController = MockHttpContext.GetControllerWithAuthContext<VacationRequestsController>(new ApplicationUser()
         {
             Id = Guid.NewGuid(),
@@ -37,7 +36,7 @@ public class VacationRequestsControllerTests
             Email = "Email",
             FirstName = "FirstName",
             LastName = "LastName",
-        });
+        }, new object[2] {null, null});
 
         var result = await vacationRequestsController.GetVacationRequests(new GetVacationRequestsPaginatedRequest(),
             vacationRequestsServiceMock);
