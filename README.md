@@ -10,7 +10,7 @@ Deployed on Azure (App Service + Azure SQL) using GitHub Actions CI/CD.
 Link: [link_remote](https://vacationmodule.azurewebsites.net/swagger)
 4. [X] [Documentation](#documentation)
 Checkout swagger at [link_remote](https://vacationmodule.azurewebsites.net/swagger)
-Alternatively,  [link_local]()
+Alternatively,  [link_extra](https://app.swaggerhub.com/apis/ZERO6305/vacationsmodule/1.0.0)
 
 ## Quickstart
 
