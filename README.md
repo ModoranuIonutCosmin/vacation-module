@@ -36,6 +36,8 @@ A default user with manager role is already seeded. (username: manageruser01, pa
 A manager can create an account for an employee.
 
 The API uses versioning default version is 1.0.
+
+Swagger UI - [remote swagger](https://vacationmodule.azurewebsites.net/swagger)
 1. Login as manager
 POST /api/v1.0/Account/login
 
@@ -59,8 +61,8 @@ POST /api/v1.0/Employee/register/employee
 {
     "firstName": "string",
     "lastName": "string",
-    "userName": "string",
-    "email": "newempl01@m.ro",
+    "userName": "string1011",
+    "email": "newempl011@m.ro",
     "password": "string123",
     "employmentDate": "2023-02-22T11:28:25.729Z",
     "department": "string",
@@ -75,7 +77,7 @@ POST /api/v1.0/Account/login
 Request body
 ```json
 {
-  "userNameOrEmail": "newempl01@m.ro",
+  "userNameOrEmail": "newempl011@m.ro",
   "password": "string123"
 }
 ```
