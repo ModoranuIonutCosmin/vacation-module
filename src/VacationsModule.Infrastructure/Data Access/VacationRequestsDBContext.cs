@@ -54,13 +54,13 @@ public class VacationRequestsDBContext : IdentityDbContext<ApplicationUser, Appl
 
         var hasher = new PasswordHasher<ApplicationRole>();
 
-
+        var mangerUserName = "manageruser01";
         modelBuilder.Entity<Manager>().HasData(
             new Manager
             {
                 Id = Guid.Parse("8e445865-a24d-4543-a6c6-9443d048cdb9"), // primary key
-                UserName = "manageruser01",
-                NormalizedUserName = "manageruser01",
+                UserName =mangerUserName,
+                NormalizedUserName = "MANAGERUSER01",
                 Department = "IT",
                 Position = "Developer",
                 FirstName = "Mark",
@@ -77,6 +77,14 @@ public class VacationRequestsDBContext : IdentityDbContext<ApplicationUser, Appl
             new IdentityUserRole<Guid>
             {
                 RoleId = Guid.Parse("2c5e174e-3b0e-446f-86af-483d56fd7210"),
+                UserId = Guid.Parse("8e445865-a24d-4543-a6c6-9443d048cdb9")
+            }
+        );
+        
+        modelBuilder.Entity<IdentityUserRole<Guid>>().HasData(
+            new IdentityUserRole<Guid>
+            {
+                RoleId = Guid.Parse("c6f97274-d239-444a-b96e-6d5f3fa97a1d"),
                 UserId = Guid.Parse("8e445865-a24d-4543-a6c6-9443d048cdb9")
             }
         );

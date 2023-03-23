@@ -20,7 +20,7 @@ public class NationalDaysService : INationalDaysService
             endDate = new DateTimeOffset(currentDate.Year, 12, 31, 0, 0, 0, currentDate.Offset);
         }
 
-        var nationalDays = new RomanianPublicHoliday().PublicHolidayNames(2023)
+        var nationalDays = new RomanianPublicHoliday().PublicHolidayNames(currentDate.Year)
             .Where(e => e.Key >= startDate && e.Key <= endDate);
 
         return nationalDays.Select(e => new NationalDay

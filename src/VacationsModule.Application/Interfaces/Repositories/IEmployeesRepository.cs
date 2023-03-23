@@ -7,4 +7,6 @@ public interface IEmployeesRepository : IRepository<Employee, Guid>
 {
     
     public Task<Employee> GetEmployeeByUserIdEagerAsync(Guid userId);
+
+    // public Task<Employee> AddEmployeeVacationDaysStatus(Guid userId);
 }

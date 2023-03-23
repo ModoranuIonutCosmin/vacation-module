@@ -17,7 +17,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{0C440328-F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacationsModule.UnitTests", "test\VacationsModule.UnitTests\VacationsModule.UnitTests.csproj", "{97C896D7-B43C-4898-87B5-FFA424F3919D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VacationsModule.IntegrationTests", "test\VacationsModule.IntegrationTests\VacationsModule.IntegrationTests.csproj", "{1F956D0C-B667-4C18-9061-DD341911F8DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "z_VacationsModule.IntegrationTests", "test\z_VacationsModule.IntegrationTests\z_VacationsModule.IntegrationTests.csproj", "{1F956D0C-B667-4C18-9061-DD341911F8DC}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{4142FFE8-DD5B-4D17-8518-FA23B2F36912}"
 EndProject

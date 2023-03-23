@@ -70,7 +70,7 @@ public class AuthenticationService : IAuthenticationService
 
         if (user == null)
         {
-            throw new AuthenticationException("Invalid credentials!");
+            throw new AuthenticationException($"Invalid credentials [usernameOrEmail: {loginData.UserNameOrEmail}]! No user with that email or username was found!");
         }
 
         //Verifica daca parola este corecta fara a incrementa numarul de incercari. (peek)
@@ -78,7 +78,7 @@ public class AuthenticationService : IAuthenticationService
 
         if (!isValidPassword)
         {
-            throw new AuthenticationException("Invalid credentials!");
+            throw new AuthenticationException("Invalid credentials! Invalid password!");
         }
 
         return new UserProfileDetailsApiModel

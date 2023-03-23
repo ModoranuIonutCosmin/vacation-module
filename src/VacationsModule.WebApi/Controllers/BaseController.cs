@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace VacationsModule.WebApi.Controllers;
 
-[Route("api/{version:apiVersion}/[controller]")]
+[Route("api/v{version:apiVersion}/[controller]")]
 [ApiController]
 public class BaseController<TDerived> : ControllerBase
 {

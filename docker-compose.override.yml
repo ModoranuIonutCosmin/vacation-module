@@ -5,16 +5,29 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
-      - ConnectionStrings__VacationsModuleDB=Server=vacationsmodule.sqldb;Database=ReservationsDB;User=sa;Password=Sarandompassword1;TrustServerCertificate=true
+      - ConnectionStrings__VacationsModuleDB=Server=vacationsmodule.sqldb;Database=VacationRequestsDB;User=sa;Password=Sarandompassword1;TrustServerCertificate=true
     ports:
-      - "80"
-      - "443"
+      - "580:80"
+      - "5443:443"
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
+
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 15s
   vacationsmodule.sqldb:
     ports:
       - "1433:1433"
     environment:
       MSSQL_SA_PASSWORD : "Sarandompassword1"
       ACCEPT_EULA: "Y"
+    deploy:
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+        window: 15s

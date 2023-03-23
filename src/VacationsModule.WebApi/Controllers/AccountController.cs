@@ -12,6 +12,8 @@ using VacationsModule.WebApi.ApiResponses.ExtensionMethods;
 namespace VacationsModule.WebApi.Controllers;
 
 [ApiVersion("1.0")]
+[ApiController]
+//[ApiExplorerSettings(GroupName = "1.0")]
 public class AccountController : BaseController<AccountController>
 {
     private readonly IAuthenticationService _authenticationService;
@@ -62,6 +64,11 @@ public class AccountController : BaseController<AccountController>
     //     return Created("", response);
     // }
 
+    /// <summary>
+    /// Logins with user and password. Available roles: Employee, Manager, [Administrator]
+    /// </summary>
+    /// <param name="loginData"></param>
+    /// <returns></returns>
     [HttpPost("login")]
     public async Task<IActionResult> LoginAsync(
         [FromBody] LoginUserDataModel loginData)
