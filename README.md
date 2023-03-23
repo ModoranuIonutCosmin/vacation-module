@@ -6,9 +6,10 @@
 ~ 50% line coverage
 3. [x] [Authorization with RBAC & JWT](#authorization-with-rbac--jwt)
 3. [X] [Deploy](#deploy)
-Deployed on Azure (App Service + Azure SQL) using GitHub Actions CI/CD
+Deployed on Azure (App Service + Azure SQL) using GitHub Actions CI/CD.
+Link: [link_remote](https://vacationmodule.azurewebsites.net/swagger)
 4. [X] [Documentation](#documentation)
-Checkout swagger at [link_remote](https://vacation-module.azurewebsites.net/swagger/index.html)
+Checkout swagger at [link_remote](https://vacationmodule.azurewebsites.net/swagger)
 Alternatively,  [link_local]()
 
 ## Quickstart
@@ -192,6 +193,9 @@ GET /api/v1.0/VacationRequests/vacation-requests/{vacationRequestId}
 
 Version is 1.0 in swagger UI.
 Use the previously created vacation request id.
+
+11. Get current user vacation days.
+GET /api/v1.0/Employee/available-vacation-days
 
 
 
