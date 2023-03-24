@@ -7,8 +7,10 @@
 3. [x] [Authorization with RBAC & JWT](#authorization-with-rbac--jwt)
 3. [X] [Deploy](#deploy)
 Deployed on Azure (App Service + Azure SQL) using GitHub Actions CI/CD.
+Disclaimer: It might take some time (30 sec-1min after accessing link) for the web API to start as it is hosted on a cheap SKU).
 Link: [link_remote](https://vacationmodule.azurewebsites.net/swagger)
 4. [X] [Documentation](#documentation)
+Disclaimer: It might take some time (30 sec-1min after accessing link) for the web API to start as it is hosted on a cheap SKU).
 Checkout swagger at [link_remote](https://vacationmodule.azurewebsites.net/swagger)
 Alternatively,  [link_extra](https://app.swaggerhub.com/apis/ZERO6305/vacationsmodule/1.0.0)
 
